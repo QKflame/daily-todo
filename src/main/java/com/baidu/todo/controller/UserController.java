@@ -1,0 +1,14 @@
+package com.baidu.todo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping({"/api/user"})
+public class UserController {
+    @GetMapping(value = "/")
+    public String getName() {
+        return "123";
+    }
+}

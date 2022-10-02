@@ -1,0 +1,24 @@
+.right-menu-content-container {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 120px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 2px 5px #f2f2f2;
+    z-index: 999;
+
+    .menu-item {
+        padding: 8px 20px;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background-color: #DEF5FD;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.plans-page-container {
+  .todo-collapse {
+    .ant-collapse-header {
+      padding: 8px 0 !important;
+    }
+
+    .ant-collapse-header-text {
+      font-weight: bold !important;
+      font-size: 12px !important;
+    }
+
+    .ant-collapse-arrow {
+      margin-right: 4px !important;
+      vertical-align: 0 !important;
+    }
+
+    .ant-collapse-content-box {
+      padding: 0 !important;
+    }
+  }
+
+  .todo-input {
+    line-height: 1.8 !important;
+    margin: 12px 0;
+  }
+}
+
+.ant-modal {
+  .ant-modal-content {
+    border-radius: 8px !important;
+
+    .ant-modal-header {
+      padding: 12px 20px;
+      border-radius: 8px 8px 0 0 !important;
+      border-bottom: 1px solid #f2f2f2 !important;
+    }
+
+    .ant-modal-close {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .ant-modal-close-x {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .ant-modal-title {
+        font-size: 14px;
+    }
+
+    .ant-modal-footer {
+        border-top: none;
+        padding: 20px 16px !important;
+        .ant-btn {
+            min-width: 80px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0;
+            margin-left: 20px;
+        }
+    }
+  }
+}

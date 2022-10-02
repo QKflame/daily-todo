@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baidu.todo.mapper.PlanMapper">
+  <select id="createPlan">
+    insert into plan (title, parent_id) values (#{title}, #{parentId})
+  </select>
+  <select id="deletePlan">
+    delete from plan where id = #{id}
+  </select>
+  <select id="getPlanList" resultType="com.baidu.todo.bean.PlanListItem">
+    select id, title, parent_id from plan
+  </select>
+</mapper>

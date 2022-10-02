@@ -1,0 +1,24 @@
+.plan-menu-container {
+    .menu-item-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        cursor: pointer;
+        user-select: none;
+        color: #333;
+
+        &:hover {
+            background-color: rgba(226,246,254, .5);
+        }
+    }
+
+    .folder-selected {
+        color: #1985F9;
+    }
+
+    .menu-item-selected {
+        background-color: #E2F6FE;
+        color: #1985F9;
+    }
+}
