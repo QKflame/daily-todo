@@ -9,7 +9,7 @@
   <select id="deletePlan">
     delete from plan where id = #{id}
   </select>
-  <select id="getPlanList" resultType="com.baidu.todo.bean.PlanListItem">
+  <select id="getPlanList" resultType="com.baidu.todo.bean.plan.PlanListItem">
     select id, title, parent_id from plan
   </select>
 </mapper>
