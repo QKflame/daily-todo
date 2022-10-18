@@ -1,3 +1,4 @@
+import { notification } from 'antd';
 import axios, { AxiosRequestConfig } from 'axios';
 
 const axiosInstance = axios.create({
@@ -9,6 +10,17 @@ axiosInstance.interceptors.request.use(config => {
   return config;
 }, err => {
   console.log(err);
+  return Promise.reject(err);
+});
+
+axiosInstance.interceptors.response.use((res) => {
+  return res;
+}, (err) => {
+  notification.error({
+    message: err.message,
+    description: err?.response?.data,
+    duration: 3000
+  });
   return Promise.reject(err);
 });
 
