@@ -6,5 +6,8 @@
         //     "path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home",
         //     "default": true
         // }
+    ],
+    "cSpell.words": [
+        "wangeditor"
     ]
 }
